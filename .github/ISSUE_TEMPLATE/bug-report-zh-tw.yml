@@ -1,0 +1,67 @@
+name: 問題回報 (中文)
+description: 回報南大資工系網的問題
+title: "[問題]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你回報問題。請填寫以下欄位,讓我們更快重現並修正。
+  - type: input
+    id: page
+    attributes:
+      label: 問題頁面 / 網址
+      description: 問題出現在哪個頁面?
+      placeholder: 頁面網址,或出問題的頁面名稱
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 發生什麼問題?
+      description: 請清楚描述問題。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      description: 我們要怎麼重現這個問題?
+      placeholder: |
+        1. 前往 ...
+        2. 點擊 ...
+        3. 出現錯誤
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期結果
+      description: 你原本預期會發生什麼?
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截圖
+      description: 如果有截圖,可以直接把圖片拖曳到這裡。
+    validations:
+      required: false
+  - type: dropdown
+    id: device
+    attributes:
+      label: 裝置
+      options:
+        - 桌機 / 筆電
+        - 手機
+        - 平板
+        - 其他
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: 瀏覽器
+      placeholder: 例如:Chrome、Safari、Firefox、Edge
+    validations:
+      required: false

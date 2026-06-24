@@ -1,0 +1,2 @@
+# Force every report through a template so we always get structured details.
+blank_issues_enabled: false

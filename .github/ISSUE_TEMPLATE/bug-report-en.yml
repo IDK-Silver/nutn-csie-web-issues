@@ -1,0 +1,67 @@
+name: Bug Report (English)
+description: Report a problem with the NUTN CSIE website
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue. Please fill in the fields below so we can reproduce and fix it faster.
+  - type: input
+    id: page
+    attributes:
+      label: Page / URL
+      description: Which page did the problem happen on?
+      placeholder: The page URL, or the page name where it happened
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce it?
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See the error
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here if you have any.
+    validations:
+      required: false
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Desktop / Laptop
+        - Phone
+        - Tablet
+        - Other
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: e.g. Chrome, Safari, Firefox, Edge
+    validations:
+      required: false
