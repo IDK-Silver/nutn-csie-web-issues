@@ -6,13 +6,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        感謝你回報問題。請填寫以下欄位,讓我們更快重現並修正。
+        感謝你回報問題。請填寫以下欄位，讓我們更快重現並修正。
   - type: input
     id: page
     attributes:
       label: 問題頁面 / 網址
       description: 問題出現在哪個頁面?
-      placeholder: 頁面網址,或出問題的頁面名稱
+      placeholder: 頁面網址，或出問題的頁面名稱
     validations:
       required: true
   - type: textarea
@@ -44,7 +44,7 @@ body:
     id: screenshots
     attributes:
       label: 截圖
-      description: 如果有截圖,可以直接把圖片拖曳到這裡。
+      description: 如果有截圖，可以直接把圖片拖曳到這裡。
     validations:
       required: false
   - type: dropdown
